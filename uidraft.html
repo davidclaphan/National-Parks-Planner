@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"
+    <head>
+        <meta charset="utf-8"/>
+        <title>Select a Park</title>
+
+    <!-- This code was taken from https://html-shark.com/HTML/ShowHideSections.htm and modified.
+      --  See the section on "Using checkboxes" near the bottom of the page. -->
+        <SCRIPT>
+            function ShowCheckboxDiv (IdBaseName, NumberOfBoxes) {
+                for (x=1;x<=NumberOfBoxes;x++) {
+                    CheckThisBox = IdBaseName + x;
+                    BoxDiv = IdBaseName + x +'Div';
+                if (document.getElementById(CheckThisBox).checked) {
+                    document.getElementById(BoxDiv).style.display = "block";
+                    }
+                else {
+                    document.getElementById(BoxDiv).style.display = "none";
+                    }
+                }
+                return false;
+            }
+            </SCRIPT>
+    </head>
+
+    <body>
+        <h1>National Parks Trip Planner</h1>
+        <p>Use the below selection tool to select a National Park or click the random button to have one selected for you!</p>
+    
+
+
+    <form>
+        <p>
+            <label> <b>National Parks</b> </label><br><br>
+            <select name="nationalPark" id="park">
+                <option value="">  Select a National Park  </option>
+                <option value="ARCH">Arches National Park</option>
+                <option value="GTNP">Grand Teton National Park</option>
+                <option value="JOTR">Joshua Tree National Park</option>
+                <option value="NCNP">North Cascades National Park</option>
+                <option value="YELL">Yellowstone National Park</option>
+                <option value="YOSE">Yosemite National Park</option>
+                <option value="ZION">Zion National Park</option>
+            </select>
+        </p>
+    </form>
+
+    <form>
+        <p>Click the button below to have a National Park randomly selected for you!</p>
+        <button type="submit">RANDOM</button>
+    </form>
+
+    <br><h3> "--BarGraph will go here with National Parks visitor data via SQL Database connection--"</h3><br>
+
+    <p><b>Recommended Hiking</b></p>
+
+    <select name="hikeDifficulty" id="hike">
+        <option value="All"> Show All Difficulty Options  </option>
+        <option value="easy">Easy</option>
+        <option value="moderate">Moderate</option>
+        <option value="hard">Hard</option>
+    </select>
+
+    <table border="2px" cellpadding="5px">
+        <caption><b>Trail Information</b></caption>
+        <thead>
+            <tr>
+                <th>Trail Name*</th>
+                <th>Difficulty</th>
+                <th>Distance (miles)</th>
+                <th>Elevation (feet)</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.alltrails.com/trail/us/wyoming/cascade-canyon-trail" target="_blank">Cascade Canyon Trail</a></td>
+                <td style="background-color: lightyellow;">Moderate</td>
+                <td><center>9.1</center></td>
+                <td><center>1102</center></td>
+                <td>Out & Back</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.alltrails.com/trail/us/wyoming/delta-lake-via-lupine-meadows-access" target="_blank">Delta Lake via Lupine Meadows Access</a></td>
+                <td style="background-color: lightcoral;">Hard</td>
+                <td><center>7.4</center></td>
+                <td><center>2299</center></td>
+                <td>Out & Back</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.alltrails.com/trail/us/wyoming/taggart-lake-loop--2" target="_blank">Taggart Lake Loop</a></td>
+                <td style="background-color: lightgreen;">Easy</td>
+                <td><center>3.8</center></td>
+                <td><center>419</center></td>
+                <td>Loop</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.alltrails.com/trail/us/wyoming/jenny-lake-trail" target="_blank">Jenny Lake Trail</a></td>
+                <td style="background-color: lightyellow;">Moderate</td>
+                <td><center>7.9</center></td>
+                <td><center>623</center></td>
+                <td>Loop</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <p><em>*Click on a Trial Name to explore more information about that trail!</em></p>
+    <br>
+
+    <p> Use the below to select a second National Park to compare and help you plan your visit.</p>
+
+
+
+    <!-- This code was taken from https://html-shark.com/HTML/ShowHideSections.htm and modified.
+      --  See the section on "Using checkboxes" near the bottom of the page. -->
+    <FORM STYLE="padding-left:5px">
+        <INPUT TYPE="checkbox" ID="BoxName1" ONCLICK="ShowCheckboxDiv('BoxName', 3)"/>Click for National Parks comparison!<BR>
+    </FORM>
+
+    <br>
+    <DIV ID="BoxName1Div" STYLE="display:none;"><h2>Second Park selection</h2>
+        <p>
+            <label> <b>National Parks</b> </label><br><br>
+            <select name="nationalPark" id="park">
+                <option value="">  Select a National Park  </option>
+                <option value="ARCH">Arches National Park</option>
+                <option value="GTNP">Grand Teton National Park</option>
+                <option value="JOTR">Joshua Tree National Park</option>
+                <option value="NCNP">North Cascades National Park</option>
+                <option value="YELL">Yellowstone National Park</option>
+                <option value="YOSE">Yosemite National Park</option>
+                <option value="ZION">Zion National Park</option>
+            </select>
+        </p>
+
+        <br><h3> "--BarGraph will go here with National Parks visitor data via SQL Database connection--"</h3><br>
+
+        <p><b>Recommended Hiking</b></p>
+
+        <select name="hikeDifficulty" id="hike">
+            <option value="All"> Show All Difficulty Options  </option>
+            <option value="easy">Easy</option>
+            <option value="moderate">Moderate</option>
+            <option value="hard">Hard</option>
+        </select>
+    
+        <table border="2px" cellpadding="5px">
+            <caption><b>Trail Information</b></caption>
+            <thead>
+                <tr>
+                    <th>Trail Name*</th>
+                    <th>Difficulty</th>
+                    <th>Distance (miles)</th>
+                    <th>Elevation (feet)</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://www.alltrails.com/trail/us/utah/delicate-arch-trail" target="_blank">Delicate Arch Trail</a></td>
+                    <td style="background-color: lightyellow;">Moderate</td>
+                    <td><center>3.2</center></td>
+                    <td><center>629</center></td>
+                    <td>Out & Back</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.alltrails.com/trail/us/utah/devils-garden-loop-trail-with-7-arches" target="_blank">Devils Garden</a></td>
+                    <td style="background-color: lightcoral;">Hard</td>
+                    <td><center>7.9</center></td>
+                    <td><center>1085</center></td>
+                    <td>Loop</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.alltrails.com/trail/us/utah/landscape-arch-trail" target="_blank">Landscape Arch Trail</a></td>
+                    <td style="background-color: lightgreen;">Easy</td>
+                    <td><center>1.9</center></td>
+                    <td><center>252</center></td>
+                    <td>Out & Back</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.alltrails.com/trail/us/utah/double-arch-trail" target="_blank">Double Arch Trail</a></td>
+                    <td style="background-color: lightgreen;">Easy</td>
+                    <td><center>0.6</center></td>
+                    <td><center>95</center></td>
+                    <td>Out & Back</td>
+                </tr>
+    
+            </tbody>
+        </table>
+        <p><em>*Click on a Trial Name to explore more information about that trail!</em></p>
+        <br>
+    
+    </DIV>
+
+    </body>
+    
