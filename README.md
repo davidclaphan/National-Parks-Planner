@@ -1,4 +1,4 @@
-# cs361-course-project-dclaphan
+cs361-course-project-dclaphan
 
 # This project is hosted on Oregon State University flip server
 
