@@ -1,6 +1,6 @@
 cs361-course-project-dclaphan
 
-# This project is hosted on Oregon State University flip server
+### This project is hosted on Oregon State University flip server
 
 ## REQUEST
  Microservice can be REQUESTED by sending a GET request to ('http://flip2.engr.oregonstate.edu:{PORT}/motivation')
