@@ -8,9 +8,9 @@ cs361-course-project-dclaphan
    and returns the value at that position.
  
 Example:
-   app.get('http://flip2.engr.oregonstate.edu:{PORT}/motivation', (req, res) => {
-     const suggestion = req.json()
-     console.log(suggestion)
+\napp.get('http://flip2.engr.oregonstate.edu:{PORT}/motivation', (req, res) => {
+\n\tconst suggestion = req.json()
+\n\tconsole.log(suggestion)
    };
 
 ## RECEIVE
