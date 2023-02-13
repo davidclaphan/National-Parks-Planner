@@ -11,7 +11,7 @@ Example:
 <br>app.get('http://flip2.engr.oregonstate.edu:{PORT}/motivation', (req, res) => {
 <br>&nbsp;&nbsp;&nbsp;&nbsp;const suggestion = req.json()
 <br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(suggestion)
-   };
+<br>};
 
 ## RECEIVE
  The data RECEIVED by the microservice will be a single string in JSON format 
