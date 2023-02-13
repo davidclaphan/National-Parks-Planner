@@ -21,9 +21,9 @@ function motivationalPhrases(){
     return phrases[num];
 }
 
-app.post("/motivation", (req, res) => {
+app.get("/motivation", (req, res) => {
     let suggestion = motivationalPhrases();
-    res.send(suggestion);
+    res.json(suggestion);
 });
 
 
