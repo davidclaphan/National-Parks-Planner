@@ -1,14 +1,14 @@
 cs361-course-project-dclaphan
 
-### This project is hosted on Oregon State University flip server
+### This project is hosted on Oregon State University flip2 server
 
 ## REQUEST
- Microservice can be REQUESTED by sending a GET request to ('http://flip2.engr.oregonstate.edu:{PORT}/motivation')
+ Microservice can be REQUESTED by sending a GET request to ('http://flip2.engr.oregonstate.edu:10726/motivation')
    The data that would be requested is hosted in an array, the GET request will call a function that randomly generates a number (index position in array)
    and returns the value at that position.
  
 Example:
-<br>app.get('http://flip2.engr.oregonstate.edu:{PORT}/motivation', (req, res) => {
+<br>app.get('http://flip2.engr.oregonstate.edu:10726/motivation', (req, res) => {
 <br>&nbsp;&nbsp;&nbsp;&nbsp;const suggestion = req.json()
 <br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(suggestion)
 <br>};
