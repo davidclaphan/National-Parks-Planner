@@ -1,3 +1,4 @@
+# National Parks Planner App
 cs361-course-project-dclaphan
 
 # Project Overview
