@@ -2,7 +2,7 @@
 
 # Project Overview
 
-This project is a simple web application called "National Parks Trip Planner" that helps a user plan their next trip to a U.S. National Park. The user can select an option from the dropdown or use the "random" feature, a microservice integration with my class partner's project. Depending on the selection, multiple components update and provide 2022 park visitor data in a toggleable table, and pre-selected hiking options that can be filtered by difficulty (Easy, Moderate, Hard). The "info" buttons in the last table column of the **Recommended Hiking** section will rerouted the user to the AllTrails page for that hike.
+This project is a web application called "National Parks Trip Planner" that helps a user plan their next trip to a U.S. National Park. The user can select an option from the dropdown or use the "random" feature, a microservice integration with my class partner's project. Depending on the selection, multiple components update and provide 2022 park visitor data in a toggleable table, and pre-selected hiking options that can be filtered by difficulty (Easy, Moderate, Hard). The "info" buttons in the last table column of the **Recommended Hiking** section will rerouted the user to the AllTrails page for that hike.
 
 Part of this project also involved creating a microservice for my class partner's project. Details about the microservice I created can be found at the bottom of this README.
 
