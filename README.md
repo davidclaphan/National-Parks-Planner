@@ -7,7 +7,7 @@ This project is a simple web application called "National Parks Trip Planner" th
 
 Part of this project also involved creating a microservice for my class partner's project. Details about the microservice I created can be found at the bottom of this README.
 
-**Front-end:** React<br>
+**Front-end:** React / JavaScript <br>
 **Back-end:** Node.js / Express / SQL database <br><br>
 Hiking data was taken from [AllTrails](https://www.alltrails.com/) and park visitor data was taken from [nps.gov](https://irma.nps.gov/Stats/SSRSReports/Park%20Specific%20Reports/Recreation%20Visitors%20By%20Month%20(1979%20-%20Last%20Calendar%20Year)?Park=GRTE)
 
