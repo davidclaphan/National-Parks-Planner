@@ -6,7 +6,6 @@
     font-family: 'Avanta Garde', sans-serif;
   }
 
-
   body {
     background: #FFFFFF;
     display:inline;
@@ -32,20 +31,20 @@
     margin-bottom: 5px;
   }
 
-  .section1 {
+  .park-select {
     border: 1px solid #000;
     border-radius: 10px;
     padding: 10px;
     padding-top: 10px;
   }
 
-  .section2 {
+  .visitor-data {
     border: 1px solid #000;
     border-radius: 10px;
     padding: 10px;
   }
 
-  .section3 {
+  .hiking-recs {
     border: 1px solid #000;
     border-radius: 10px;
     padding: 10px;

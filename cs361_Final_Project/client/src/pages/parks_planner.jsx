@@ -7,7 +7,6 @@ import RenderHikesDropdown from '../components/HikesDropdown';
 
 const Planner = () => {
 
-    // Get data for Tables
     const [parks, setParks] = useState([]);
     const [visitors, setVisitors] = useState([]);
     const [hikes, setHikes] = useState([]);
@@ -68,7 +67,7 @@ const Planner = () => {
     }, [renderNew]); 
 
 
-    // Pull data from the database to populate the table headers
+    // Populate the table headers
     const [parksColumns, setParksHeaders] = useState([])
     let parksHeaders = []
 
@@ -84,7 +83,7 @@ const Planner = () => {
         populateHeaders()
     });
 
-    // Not all columns in db should display for these tables, manually set headers we want to see
+    // Manually set headers we want to see
     let hikesHeaders = ["location", "NAME", "difficulty", "distance", "elevation", "type"];
     let visitorHeaders = ["month", "visitors"];
 
@@ -95,7 +94,7 @@ const Planner = () => {
     }
     parksPop()
 
-    // GET data to Generate Parks Dropdown
+    // GET data for Parks dropdown
     const[parksDropDown, setParksDropdown] = useState([])
 
     useEffect (() => {
@@ -106,11 +105,11 @@ const Planner = () => {
             } catch (err) {
                 console.log(err)
             }
-            }
-            populateParksDrop()
+        }
+        populateParksDrop()
     }, [renderNew]);
 
-    // GET data to Generate Hikes Dropdown
+    // GET data for Hikes dropdown
     const[hikesDropDown, setHikesDropdown] = useState([])
 
     useEffect (() => {
@@ -121,8 +120,8 @@ const Planner = () => {
             } catch (err) {
                 console.log(err)
             }
-            }
-            populateHikesDrop()
+        }
+        populateHikesDrop()
     }, [renderNew]); 
 
     // Random button functionality (microservice)
@@ -141,23 +140,21 @@ const Planner = () => {
         }
     };
     
-    // Force rerender of hikes table
     const updateHikes = async () => {
         forceUpdate()
     };
 
-    // Toggle for visitor data
+    // Toggle Visitor Data
     const [showTable, setShowTable] = useState(false);
     const toggleTable = () => {
         setShowTable(!showTable);
     };
 
-    // Render the Parks Page
     return (
         <div className='main'>
             <p> Use the below selection tool to select a National Park or click the random button to have one selected for you!</p>
             
-            <div className='section1'>
+            <div className='park-select'>
             <h3 id="page-header"> National Parks </h3>
                 <div id="table-div">
                     <div className='park-select-ele'>
@@ -180,7 +177,7 @@ const Planner = () => {
 
             <div className='selection'>Selected Park: <b>{ParksSelect}</b></div>
 
-            <div className='section2'>    
+            <div className='visitor-data'>    
                 <div>
                     <h3> Visitor Data</h3>
                     <p><text>Click this button to see or hide 2022 visitor data:</text></p>
@@ -192,7 +189,7 @@ const Planner = () => {
 
             <p></p>
 
-            <div className='section3'>
+            <div className='hiking-recs'>
                 <div id='table-div'>
                     <div className='hiking-skill-select'>
                     <h3> Recommended Hiking</h3>&nbsp;
