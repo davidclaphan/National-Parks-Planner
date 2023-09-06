@@ -1,5 +1,4 @@
 # National Parks Planner App
-cs361-course-project-dclaphan
 
 # Project Overview
 
@@ -13,8 +12,6 @@ Hiking data was taken from [AllTrails](https://www.alltrails.com/) and park visi
 
 ![image](https://user-images.githubusercontent.com/97066227/221384132-29ebafd7-fdbd-409c-9278-ad700b0d8991.png)
 
-
-### This project is hosted on Oregon State University flip2 server
 
 # Microservice Implementation
 
